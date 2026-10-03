@@ -21,7 +21,10 @@
     "jest-environment-jsdom": "^29.7.0",
     "prettier": "^3.8.4"
   },
-  "overrides": {
-    "js-yaml": "^5.0.0"
+  "packageManager": "pnpm@10.34.6",
+  "pnpm": {
+    "overrides": {
+      "js-yaml": "^5.0.0"
+    }
   }
 }

@@ -13,10 +13,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ```bash
 # 开发模式：HTTP 服务(8888) + Jest watch 同时运行
-npm run dev
+pnpm run dev
 
 # 单次运行测试（CI / 快速验证）
-npm test
+pnpm test
 
 # 检查当前脚本版本号
 rg "^// @version" KeepChatGPT.user.js

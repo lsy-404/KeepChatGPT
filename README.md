@@ -114,8 +114,8 @@
 ## 开发调试
 
 1. 临时关闭 Tampermonkey 中已安装的正式版 `KeepChatGPT.user.js`，避免与开发加载器重复注入
-2. 安装依赖：`npm install`
-3. 启动开发模式：`npm run dev`
+2. 安装依赖：`corepack pnpm@10.34.6 install --frozen-lockfile`
+3. 启动开发模式：`pnpm run dev`
 4. 在 Tampermonkey 中安装开发加载器：`KeepChatGPT.dev.user.js`
 5. 开发加载器会从 `http://localhost:8888/KeepChatGPT.user.js` 拉取最新脚本
 6. 修改 `KeepChatGPT.user.js` 后，刷新 ChatGPT 页面即可生效
@@ -127,7 +127,7 @@
 可直接把下面的提示词发给支持浏览器操作的 AI：
 
 ```text
-我已开启 `npm run dev`，请用浏览器打开 `https://chatgpt.com/`，确认 `KeepChatGPT.dev.user.js` 是否已正常工作，并且页面是否成功加载 `http://localhost:8888/KeepChatGPT.user.js`，然后验证以下内容：
+我已开启 `pnpm run dev`，请用浏览器打开 `https://chatgpt.com/`，确认 `KeepChatGPT.dev.user.js` 是否已正常工作，并且页面是否成功加载 `http://localhost:8888/KeepChatGPT.user.js`，然后验证以下内容：
 1. `#kcg` 是否出现
 2. 设置菜单是否能打开
 3. 我指定的功能是否生效
